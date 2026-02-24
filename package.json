@@ -1,0 +1,15 @@
+{
+    "name": "apple-notes-clone",
+    "version": "1.0.0",
+    "description": "Full-stack Apple Notes clone",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd server && node index.js",
+        "client": "cd client && npx vite",
+        "install-all": "cd server && npm install && cd ../client && npm install"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.0"
+    }
+}
