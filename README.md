@@ -1,6 +1,6 @@
-# 📝 Apple Notes Clone
+# ✏️ Papyr
 
-A full-featured note-taking app inspired by Apple Notes, built with React + Node.js + MongoDB.
+A modern, full-featured note-taking app built with React + Node.js + MongoDB.
 
 ![Dark Theme](https://img.shields.io/badge/Theme-Dark%20%2F%20Light-yellow)
 ![JWT Auth](https://img.shields.io/badge/Auth-JWT-blue)
@@ -60,7 +60,7 @@ The app will be available at `http://localhost:5173`
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `MONGO_URI` | MongoDB connection string | `mongodb://localhost:27017/apple-notes` |
+| `MONGO_URI` | MongoDB connection string | `mongodb://localhost:27017/papyr` |
 | `PORT` | Server port | `5000` |
 | `JWT_SECRET` | JWT signing secret | — |
 

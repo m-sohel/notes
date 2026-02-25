@@ -63,7 +63,7 @@ function AuthPage({ onAuth }) {
                     <div className="auth-logo-icon">
                         <HiOutlineDocumentText />
                     </div>
-                    <h1 className="auth-title">Notes</h1>
+                    <h1 className="auth-title">Papyr</h1>
                     <p className="auth-subtitle">
                         {mode === 'login' ? 'Welcome back' : 'Create your account'}
                     </p>

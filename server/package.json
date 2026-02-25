@@ -1,7 +1,7 @@
 {
-  "name": "apple-notes-server",
+  "name": "papyr-server",
   "version": "1.0.0",
-  "description": "Backend API for Apple Notes Clone",
+  "description": "Backend API for Papyr",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

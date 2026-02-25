@@ -1,7 +1,7 @@
 {
-    "name": "apple-notes-clone",
+    "name": "papyr",
     "version": "1.0.0",
-    "description": "Full-stack Apple Notes clone",
+    "description": "Papyr — a modern full-stack note-taking app",
     "private": true,
     "scripts": {
         "dev": "concurrently \"npm run server\" \"npm run client\"",
