@@ -1,5 +1,5 @@
 ================================================================================
-        APPLE NOTES CLONE — COMPLETE PROJECT EXPLANATION
+        PAPYR — COMPLETE PROJECT EXPLANATION
 ================================================================================
 
 Hey! This is a deep explanation of how this entire project works, with
@@ -111,10 +111,10 @@ The actual database engine (mongod.exe) is a separate background process.
 
 In our server's .env file, we have:
 
-  MONGO_URI=mongodb://localhost:27017/apple-notes
+  MONGO_URI=mongodb://localhost:27017/papyr
 
 This tells our app: "Connect to MongoDB on this computer, port 27017,
-and use a database called 'apple-notes'."
+and use a database called 'papyr'."
 
 HERE'S THE MAGIC: In MongoDB, you do NOT need to create a database first.
 Unlike MySQL or PostgreSQL where you'd run "CREATE DATABASE...", MongoDB
@@ -122,13 +122,13 @@ creates the database AUTOMATICALLY the first time you insert data into it.
 
 So when our server starts, this is what happens:
 
-  1. Our code calls: mongoose.connect('mongodb://localhost:27017/apple-notes')
+  1. Our code calls: mongoose.connect('mongodb://localhost:27017/papyr')
   2. Mongoose connects to the MongoDB server on port 27017
-  3. It says "I want to use the 'apple-notes' database"
+  3. It says "I want to use the 'papyr' database"
   4. MongoDB says "That doesn't exist yet, but OK, I'll create it when
      you first store something"
   5. The first time you create a note or folder, MongoDB auto-creates:
-     - The "apple-notes" database
+     - The "papyr" database
      - The "notes" collection (like a table)
      - The "folders" collection
      - The actual document (your note/folder data)
@@ -160,7 +160,7 @@ If you try to save something that doesn't match, it throws an error.
   1. Open MongoDB Compass
   2. The connection string should already be: mongodb://localhost:27017
   3. Click "Connect"
-  4. You'll see a database called "apple-notes" in the left sidebar
+  4. You'll see a database called "papyr" in the left sidebar
   5. Click on it → you'll see two collections: "notes" and "folders"
   6. Click on "notes" → you'll see all your notes as JSON documents!
 
@@ -253,7 +253,7 @@ all notes from that folder (moves them to "All Notes").
 
 ─── 5a. index.css — The Design System ───
 
-This is the heart of the visual design. It creates an Apple-like dark UI:
+This is the heart of the visual design. It creates an premium dark UI:
 
   CSS Variables (custom properties):
   - --bg-primary: #1e1e1e     → Main dark background
@@ -263,7 +263,7 @@ This is the heart of the visual design. It creates an Apple-like dark UI:
   Frosted Glass Effect (on sidebar):
   - backdrop-filter: blur(40px) saturate(180%)
   - This blurs whatever is behind the sidebar, creating that
-    "frosted glass" look Apple uses in macOS
+    "frosted glass" look modern desktop apps use
 
   Custom Scrollbars:
   - Thin, subtle scrollbars that match the dark theme
@@ -389,7 +389,7 @@ Let's trace exactly what happens when you click the "+" button:
           Then converts it to a MongoDB command
   ↓
   STEP 8: MongoDB receives the command and:
-          - If the "apple-notes" database doesn't exist → creates it
+          - If the "papyr" database doesn't exist → creates it
           - If the "notes" collection doesn't exist → creates it
           - Generates a unique _id (like "679c5d5b5fc32a47570b29f1")
           - Stores the document on disk
@@ -437,3 +437,4 @@ Let's trace exactly what happens when you click the "+" button:
   Browser ← React (5173) ← Express (5000) ← MongoDB (27017)
 
 ================================================================================
+

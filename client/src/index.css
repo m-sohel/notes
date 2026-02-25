@@ -18,13 +18,13 @@
   --bg-elevated: #2c2c2e;
   --bg-card: rgba(255, 255, 255, 0.03);
 
-  /* Text Colors — Apple-accurate grays */
+  /* Text Colors */
   --text-primary: #f5f5f7;
   --text-secondary: #98989d;
   --text-tertiary: #636366;
   --text-accent: #ffd60a;
 
-  /* Accent / Brand — Apple Yellow */
+  /* Accent / Brand */
   --accent: #ffd60a;
   --accent-hover: #ffe040;
   --accent-glow: rgba(255, 214, 10, 0.2);
