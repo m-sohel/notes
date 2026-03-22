@@ -94,6 +94,4 @@ notes/
 └── package.json         # Root scripts (concurrently)
 ```
 
-## 📜 License
 
-MIT
